@@ -1,0 +1,15 @@
+{
+  "ignoreCommand": "echo Ignoring backend functions for Vercel",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
