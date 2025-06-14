@@ -4,7 +4,7 @@ export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto py-16 px-4">
       <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
-      <p className="mb-4">Welcome to Baadaye! These Terms of Service ("Terms") govern your use of our website and services. By accessing or using our site, you agree to be bound by these Terms.</p>
+      <p className="mb-4">Welcome to Baadaye! These Terms of Service (&quot;Terms&quot;) govern your use of our website and services. By accessing or using our site, you agree to be bound by these Terms.</p>
       <h2 className="text-xl font-semibold mt-8 mb-2">1. Acceptance of Terms</h2>
       <p className="mb-4">By using our website, you agree to comply with and be legally bound by these Terms. If you do not agree to these Terms, please do not use our services.</p>
       <h2 className="text-xl font-semibold mt-8 mb-2">2. Use of Services</h2>
