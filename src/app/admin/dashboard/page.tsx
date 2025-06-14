@@ -195,7 +195,10 @@ export default function DashboardPage() {
       <div className="py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-6">
-            <h1 className="text-2xl font-bold text-foreground">Loan Applications</h1>
+            <div className="flex items-center space-x-4">
+              <h1 className="text-2xl font-bold text-foreground">Loan Applications</h1>
+              <span className="text-sm text-muted-foreground">powered by <span className="font-semibold text-primary">LIT</span></span>
+            </div>
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}

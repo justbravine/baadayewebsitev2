@@ -38,6 +38,7 @@ const Navbar = ({ className }: NavbarProps) => {
     { name: 'About', href: '/about' },
     { name: 'Apply', href: '/apply' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Admin Login', href: '/admin/login' },
   ];
 
   return (

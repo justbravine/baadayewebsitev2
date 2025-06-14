@@ -65,6 +65,7 @@ export default function Home() {
             <a href="#how" className="hover:text-blue-400 transition">How it Works</a>
             <a href="#apply" className="hover:text-blue-400 transition">Apply</a>
             <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
+            <a href="/admin/login" className="hover:text-blue-400 transition">Admin Login</a>
           </div>
         </div>
       </nav>
@@ -250,7 +251,7 @@ export default function Home() {
               <li className="flex items-center gap-2"><FaPhoneAlt className="text-blue-500" /> 0722 442 552</li>
               <li className="flex items-center gap-2"><FaPhoneAlt className="text-blue-500" /> 0706 442 552</li>
               <li className="flex items-center gap-2"><FaEnvelope className="text-blue-500" /> support@baadaye.com</li>
-              <li className="flex items-center gap-2"><FaGithub className="text-blue-500" /> <a href="https://github.com/justbravine" target="_blank" className="hover:text-blue-400">@bravine-dev</a></li>
+              <li className="flex items-center gap-2"><FaGithub className="text-blue-500" /> <a href="https://github.com/justbravine" target="_blank" className="hover:text-blue-400">@justbravine</a></li>
             </ul>
           </div>
         </div>

@@ -13,17 +13,26 @@ export function AdminLayout({ children, className = '' }: AdminLayoutProps) {
       <header className="glass-card border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center group">
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
                 Baadaye
+              </span>
+              <span className="text-sm text-muted-foreground ml-2 group-hover:text-primary transition-colors duration-300">
+                powered by <span className="font-semibold">LIT</span>
               </span>
             </Link>
             <nav className="flex items-center space-x-6">
               <Link 
-                href="/dashboard" 
+                href="/" 
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               >
-                Dashboard
+                Home
+              </Link>
+              <Link 
+                href="/admin/login" 
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                Admin Login
               </Link>
             </nav>
           </div>

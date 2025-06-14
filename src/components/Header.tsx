@@ -22,6 +22,7 @@ export default function Header() {
     { name: 'Apply', href: '/apply' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Admin Login', href: '/admin/login' },
   ]
 
   return (

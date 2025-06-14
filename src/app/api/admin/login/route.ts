@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { sign } from 'jsonwebtoken'
 
+// IMPORTANT: Set JWT_SECRET in your Vercel environment variables for production security.
+
 // This should be moved to environment variables in production
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key'
 
@@ -41,7 +43,7 @@ export async function POST(request: Request) {
     const response = NextResponse.json({ success: true })
     response.cookies.set('adminToken', token, {
       httpOnly: true,
-      secure: false, // Set to false for development
+      secure: process.env.NODE_ENV === 'production', // Set to true for production
       sameSite: 'lax', // Changed to 'lax' for better compatibility
       maxAge: 60 * 60 * 24, // 24 hours
       path: '/', // Ensure cookie is available for all paths
